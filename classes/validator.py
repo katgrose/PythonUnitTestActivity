@@ -11,8 +11,7 @@ class Validator:
         if username.islower():
             return False
             
-        
-        if any(specialchar in username  for specialchar in "$%^&*()#@"):
+        if any(specialchar in username for specialchar in "$%^&*()#@"):
             return False
 
         return True
